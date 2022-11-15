@@ -88,7 +88,8 @@ def move(game_state: typing.Dict) -> typing.Dict:
     # TODO: Step 4 - Move towards food instead of random, to regain health and survive longer
     # food = game_state['board']['food']
     food = new Food()
-    if food.get_food():
+    if food.starving():
+        # TODO: shortest path to nearest food algorithm
         pass
 
 
